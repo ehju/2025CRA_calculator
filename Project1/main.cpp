@@ -82,6 +82,7 @@ TEST(t1, t3) {
 TEST(t1, t5) {
 	Cal cal;
 	EXPECT_EQ(2, cal.getMinus(4, 2));
+}
 
 TEST(t1, divide_basic) {
 	Cal cal;
