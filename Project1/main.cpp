@@ -1,13 +1,16 @@
 #include "gmock/gmock.h"
 class Cal {
 public:	
-	// ÀÌ°÷¿¡ ÄÚµå ÀÛ¼º
-	int getZegop(int a)
-	{
+	// ì´ê³³ì— ì½”ë“œ ì‘ì„±
+
+	int getZegop(int a){
 		return a * a;
+  }
+	int getSum(int a, int b) {
+		return a + b;
 	}
 };
-// Å×½ºÆ®ÄÉÀÌ½º ÀÛ¼º
+// í…ŒìŠ¤íŠ¸ì¼€ì´ìŠ¤ ì‘ì„±
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
