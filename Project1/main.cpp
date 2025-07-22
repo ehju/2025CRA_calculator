@@ -36,6 +36,11 @@ TEST(t1, t3) {
 	Cal cal;
 	EXPECT_EQ(4, cal.getZegop(2));
 }
+TEST(t1, divide_basic) {
+	Cal cal;
+	int actual = cal.getDivide(10, 2);
+	EXPECT_EQ(actual, 5);
+}
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
