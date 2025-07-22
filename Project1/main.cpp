@@ -28,10 +28,15 @@ public:
 	}
 };
 // 테스트케이스 작성
-TEST(t1, t2) {
+TEST(getSumSumTest, TC_NormalSumSum) {
 	Cal c = Cal();
 	
 	EXPECT_EQ(6, c.getSumSum(1,2,3));
+}
+TEST(getSumSumTest, TC_MinusSumSum) {
+	Cal c = Cal();
+
+	EXPECT_EQ(-6, c.getSumSum(-3, -2, -1));
 }
 // 테스트케이스 작성
 TEST(t1, t3) {
