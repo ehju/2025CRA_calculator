@@ -2,13 +2,15 @@
 class Cal {
 public:	
 	// 이곳에 코드 작성
-
 	int getZegop(int a){
 		return a * a;
   }
 	int getSum(int a, int b) {
 		return a + b;
 	}
+  int getSumSum(int a, int b, int c) {
+	  return a + b + c;
+  }
 };
 // 테스트케이스 작성
 TEST(t1, t2) {
