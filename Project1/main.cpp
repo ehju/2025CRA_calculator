@@ -1,6 +1,8 @@
 #include <iostream>
 #include "gmock/gmock.h"
 #include <exception>
+#include <iostream>
+
 class Cal {
 public:	
 	// 이곳에 코드 작성
@@ -32,7 +34,16 @@ public:
 	}
 };
 // 테스트케이스 작성
+TEST(t1, t2) {
+	Cal calSum;
+	EXPECT_EQ(calSum.getSum(1, 1), 2) << "expect 2";
+	EXPECT_EQ(calSum.getSum(0, 0), 0) << "expect 0";
+	
+	EXPECT_EQ(1, 1);
+}
+
 TEST(getSumSumTest, TC_NormalSumSum) {
+
 	Cal c = Cal();
 	
 	EXPECT_EQ(6, c.getSumSum(1,2,3));
