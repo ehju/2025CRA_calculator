@@ -1,7 +1,11 @@
 #include "gmock/gmock.h"
 class Cal {
-public:
+public:	
 	// 이곳에 코드 작성
+	int getZegop(int a)
+	{
+		return a * a;
+	}
 };
 // 테스트케이스 작성
 TEST(t1, t2) {
