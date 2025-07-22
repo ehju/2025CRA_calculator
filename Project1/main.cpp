@@ -67,6 +67,12 @@ TEST(t1, t3) {
 TEST(t1, t5) {
 	Cal cal;
 	EXPECT_EQ(2, cal.getMinus(4, 2));
+
+TEST(t1, divide_basic) {
+	Cal cal;
+	int actual = cal.getDivide(10, 2);
+	EXPECT_EQ(actual, 5);
+
 }
 
 int main() {
@@ -76,3 +82,9 @@ int main() {
 
 
 
+TEST(MinusTest, TCMINUS) {
+	MINUS a;
+	int ret = a.minus(5, 3);
+
+	EXPECT_EQ(ret, 2);
+}
