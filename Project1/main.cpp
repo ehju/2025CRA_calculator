@@ -26,6 +26,10 @@ public:
 		else
 			return a / b;
 	}
+  
+	int getMinus(int a, int b) {
+	  return a - b;
+	}
 };
 // 테스트케이스 작성
 TEST(t1, t2) {
@@ -60,10 +64,15 @@ TEST(t1, t3) {
 	EXPECT_EQ(4, cal.getZegop(2));
 }
 
+TEST(t1, t5) {
+	Cal cal;
+	EXPECT_EQ(2, cal.getMinus(4, 2));
+
 TEST(t1, divide_basic) {
 	Cal cal;
 	int actual = cal.getDivide(10, 2);
 	EXPECT_EQ(actual, 5);
+
 }
 
 int main() {
@@ -71,12 +80,7 @@ int main() {
 	return RUN_ALL_TESTS();
 }
 
-class MINUS {
-public:
-	int minus(int a, int b) {
-		return a - b;
-	}
-};
+
 
 TEST(MinusTest, TCMINUS) {
 	MINUS a;
