@@ -26,6 +26,10 @@ public:
 		else
 			return a / b;
 	}
+  
+	int getMinus(int a, int b) {
+	  return a - b;
+	}
 };
 // 테스트케이스 작성
 TEST(t1, t2) {
@@ -36,15 +40,14 @@ TEST(t1, t3) {
 	Cal cal;
 	EXPECT_EQ(4, cal.getZegop(2));
 }
+TEST(t1, t5) {
+	Cal cal;
+	EXPECT_EQ(2, cal.getMinus(4, 2));
+}
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
 }
 
-class MINUS {
-public:
-	int minus(int a, int b) {
-		return a - b;
-	}
-};
+
 
