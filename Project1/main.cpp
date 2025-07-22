@@ -53,6 +53,11 @@ TEST(getGopTC, TC3)
 	EXPECT_EQ(ret, -20);
 }
 
+TEST(t1, t3) {
+	Cal cal;
+	EXPECT_EQ(4, cal.getZegop(2));
+}
+
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
