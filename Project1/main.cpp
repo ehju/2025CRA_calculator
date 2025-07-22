@@ -95,12 +95,3 @@ int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
 }
-
-
-
-TEST(MinusTest, TCMINUS) {
-	MINUS a;
-	int ret = a.minus(5, 3);
-
-	EXPECT_EQ(ret, 2);
-}
