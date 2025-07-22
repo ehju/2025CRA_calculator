@@ -4,6 +4,12 @@
 class Cal {
 public:	
 	// 이곳에 코드 작성
+
+	int getGop(int a, int b)
+	{
+		return a * b;
+	}
+
 	int getZegop(int a){
 		return a * a;
   }
