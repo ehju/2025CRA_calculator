@@ -32,6 +32,27 @@ TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
 
+TEST(getGopTC, TC1)
+{
+	Cal cal;
+	int ret = cal.getGop(4, 5);
+	EXPECT_EQ(ret, 20);
+}
+
+TEST(getGopTC, TC2)
+{
+	Cal cal;
+	int ret = cal.getGop(4, 0);
+	EXPECT_EQ(ret, 0);
+}
+
+TEST(getGopTC, TC3)
+{
+	Cal cal;
+	int ret = cal.getGop(4, -5);
+	EXPECT_EQ(ret, -20);
+}
+
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
