@@ -40,9 +40,18 @@ TEST(t1, t2) {
 	EXPECT_EQ(calSum.getSum(0, 0), 0) << "expect 0";
 	
 	EXPECT_EQ(1, 1);
+}
+
+TEST(getSumSumTest, TC_NormalSumSum) {
+
 	Cal c = Cal();
 	
 	EXPECT_EQ(6, c.getSumSum(1,2,3));
+}
+TEST(getSumSumTest, TC_MinusSumSum) {
+	Cal c = Cal();
+
+	EXPECT_EQ(-6, c.getSumSum(-3, -2, -1));
 }
 
 TEST(getGopTC, TC1)
@@ -65,7 +74,6 @@ TEST(getGopTC, TC3)
 	int ret = cal.getGop(4, -5);
 	EXPECT_EQ(ret, -20);
 }
-
 TEST(t1, t3) {
 	Cal cal;
 	EXPECT_EQ(4, cal.getZegop(2));
