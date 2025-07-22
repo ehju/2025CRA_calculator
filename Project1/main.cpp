@@ -31,7 +31,11 @@ public:
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
-
+// 테스트케이스 작성
+TEST(t1, t3) {
+	Cal cal;
+	EXPECT_EQ(4, cal.getZegop(2));
+}
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
