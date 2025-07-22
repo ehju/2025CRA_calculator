@@ -29,7 +29,9 @@ public:
 };
 // 테스트케이스 작성
 TEST(t1, t2) {
-	EXPECT_EQ(1, 1);
+	Cal c = Cal();
+	
+	EXPECT_EQ(6, c.getSumSum(1,2,3));
 }
 // 테스트케이스 작성
 TEST(t1, t3) {
