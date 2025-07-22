@@ -1,9 +1,18 @@
 #include "gmock/gmock.h"
 #include <exception>
 class Cal {
-public:
-	// ÀÌ°÷¿¡ ÄÚµå ÀÛ¼º
-	int getDivide(int a, int b)
+public:	
+	// ì´ê³³ì— ì½”ë“œ ì‘ì„±
+	int getZegop(int a){
+		return a * a;
+  }
+	int getSum(int a, int b) {
+		return a + b;
+	}
+  int getSumSum(int a, int b, int c) {
+	  return a + b + c;
+  }
+  int getDivide(int a, int b)
 	{
 		if (b == 0)
 			throw std::exception("EINVAL - divide by zero\n");
@@ -11,7 +20,7 @@ public:
 			return a / b;
 	}
 };
-// Å×½ºÆ®ÄÉÀÌ½º ÀÛ¼º
+// í…ŒìŠ¤íŠ¸ì¼€ì´ìŠ¤ ì‘ì„±
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
