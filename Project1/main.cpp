@@ -1,4 +1,5 @@
 #include "gmock/gmock.h"
+#include <exception>
 class Cal {
 public:	
 	// 이곳에 코드 작성
@@ -11,6 +12,13 @@ public:
   int getSumSum(int a, int b, int c) {
 	  return a + b + c;
   }
+  int getDivide(int a, int b)
+	{
+		if (b == 0)
+			throw std::exception("EINVAL - divide by zero\n");
+		else
+			return a / b;
+	}
 };
 // 테스트케이스 작성
 TEST(t1, t2) {
