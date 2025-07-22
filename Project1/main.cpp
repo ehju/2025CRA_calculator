@@ -13,3 +13,9 @@ public:
 	}
 };
 
+TEST(MinusTest, TCMINUS) {
+	MINUS a;
+	int ret = a.minus(5, 3);
+
+	EXPECT_EQ(ret, 2);
+}
